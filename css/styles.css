@@ -1,0 +1,23 @@
+.topheading{
+	text-align:center;
+	color:crimson;
+}
+p{
+background-color:aqua;
+
+}
+#container2 h3{
+	color:blue;
+}
+#childselector > h4{
+	color:BlueViolet;
+}
+div h4+h5{
+	color:brown;
+}
+h2~h6{
+	color:red;
+}
+*{
+	font-family: 'Libre Baskerville', serif;
+}

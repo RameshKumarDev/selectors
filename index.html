@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Selectors</title>
+		<link rel="stylesheet" href="./css/styles.css">
+		<link rel="icon" type="icon/x-icon" href="./images/css.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	</head>
+	<body>	
+		<h1 class="topheading">Selectors</h1><hr>
+		<div>
+			<h2>Simple selector</h2>
+			<p>Paragraph</p>
+		</div>
+		<hr>
+		<div id="container2">
+			<h2>Combinator selector </h2>
+			<p>All the <mark>descendants</mark> gets styled</p>
+			<h3>Descendant selector (styled using combinator selector)</h3>
+			<div>
+				<h3>(inside div) this will also get styled</h3>
+			</div>
+			<h3>(outside div)  this will also get styled </h3>
+		</div>
+		<hr>
+		<div id="childselector"> 
+			<h2>Child selector</h2>
+			<p>not all the desendents gets styled only the <mark>child of the specified element</mark>  gets styled</p>
+			<h4>child of &#x23;childselector</h4>
+			<h4>child of &#x23;childselector</h4>
+			<div>
+				<h4>not a child of &#x23;childselector , it's only a decendant</h4>
+			</div>
+			<h4>child of &#x23;childselector</h4>
+		</div>
+		<hr>
+		<div>
+			<h2>Adjacent sibling selector</h2>
+			<p>the element <mark>just after the specified element</mark> gets styled</p>
+			<h4>the element just after this gets styled</h4>
+			<h5>this alone gets styled</h5>
+			<h5>this does not get styled</h5>
+			<p>this does not get styled (this will be styled by simple element selector)</p>
+			<h4>the element just after this gets styled</h4>
+			<h5>this alone gets styled</h5>
+			<h5>this does not get styled</h5>
+		</div>
+		<hr>
+		<div>
+			<h2>General sibling selector</h2>
+			<p><mark>All the sibling of the specified element</mark> gets styled</p>
+			<h6>this will get styled</h6>
+			<h6>this will get styled</h6>
+			<div>
+				<h6>this will not get styled</h6>
+			</div>
+			<h6>this will get styled</h6>
+		</div>		
+	</body>
+</html>
